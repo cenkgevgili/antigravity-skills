@@ -1,64 +1,98 @@
-🚀 Antigravity Skills
+# 🚀 Antigravity Skills
 
-Bu depo, Antigravity programı için geliştirilmiş, yeniden kullanılabilir ve standartlaştırılmış skills (yetenek tanımları) içerir.
+Bu depo, **Antigravity programı** için geliştirilmiş, yeniden kullanılabilir ve standartlaştırılmış **skills (yetenek tanımları)** içerir.
 
-Bu skills’lerin amacı; yapay zekâ destekli proje üretim ve inceleme süreçlerinde tutarlılığı, doğruluğu ve birebir uyumu garanti altına almaktır.
+Bu skills’lerin amacı; yapay zekâ destekli proje üretim ve inceleme süreçlerinde **tutarlılığı**, **doğruluğu** ve **birebir uyumu** garanti altına almaktır.
 
-Bu repo bir dokümantasyon arşivi değil; Antigravity’nin nasıl davranması gerektiğini tanımlayan davranış sözleşmeleridir.
+> Bu repo bir dokümantasyon arşivi değil; Antigravity’nin nasıl davranması gerektiğini tanımlayan **davranış sözleşmeleridir**.
 
-⸻
+---
 
-📦 Repo İçeriği
+## 📦 Repo İçeriği
 
-antigravity-skills/
-├─ skills/
-│  ├─ code-review.md
-│  └─ project-parity-guard.md
-├─ README.md
-└─ LICENSE
+    antigravity-skills/
+    ├─ skills/
+    │  ├─ code-review.md
+    │  └─ project-parity-guard.md
+    ├─ README.md
+    └─ LICENSE
 
+---
 
-⸻
+## 🧠 Skills Nedir?
 
-🧠 Skills Nedir?
+**Skill**, Antigravity programına:
 
-Skill, Antigravity programına:
-	•	hangi durumda ne yapacağını,
-	•	nasıl düşüneceğini,
-	•	hangi kurallara uymak zorunda olduğunu
+- hangi durumda **ne yapacağını**
+- nasıl **düşüneceğini**
+- hangi kurallara **uymak zorunda olduğunu**
 
 öğreten, Markdown tabanlı bir davranış tanımıdır.
 
 Bu repo’daki skills:
-	•	prompt değildir
-	•	örnek kod değildir
-	•	kuralsız rehber değildir
 
-Her biri kesin kurallar, adımlar ve çıktı formatları tanımlar.
+- prompt değildir
+- örnek kod değildir
+- kuralsız rehber değildir
 
-⸻
+Her biri **kesin kurallar**, **adımlar** ve **çıktı formatları** tanımlar.
 
-🧩 Mevcut Skills
+---
 
-1️⃣ Code Review Skill
+## 🧩 Mevcut Skills
 
-Dosya: skills/code-review.md
+### 1️⃣ Code Review Skill
 
-Bu skill, Antigravity’nin bir projedeki kod değişikliklerini standart, tutarlı ve profesyonel şekilde incelemesini sağlar.
+**Dosya:** `skills/code-review.md`
 
-🎯 Amaç
-	•	Kodun sadece çalışmasını değil, sürdürülebilir olmasını sağlamak
-	•	İnceleme sürecinde kişisel değil, kod odaklı geri bildirim üretmek
-	•	Junior → Senior reviewer davranışlarını netleştirmek
+Bu skill, Antigravity’nin bir projedeki kod değişikliklerini **standart, tutarlı ve profesyonel** şekilde incelemesini sağlar.
 
-🔍 İncelediği Alanlar
-	•	Doğruluk (Correctness)
-	•	Mimari & Temiz Kod
-	•	Performans & Ölçeklenebilirlik
-	•	Güvenlik & Sağlamlık
-	•	Test & Dokümantasyon
+#### 🎯 Amaç
 
-👥 Reviewer Seviyeleri
+- Kodun sadece çalışmasını değil, **sürdürülebilir olmasını** sağlamak
+- İnceleme sürecinde kişisel değil, **kod odaklı** geri bildirim üretmek
+- Junior → Senior reviewer davranışlarını netleştirmek
+
+---
+
+### 2️⃣ Project Parity Guard
+
+**Dosya:** `skills/project-parity-guard.md`
+
+Bu skill, Antigravity’ye verilen **hazır referans kodlar** ile, bu kodlardan üretilen projenin **birebir aynı** olmasını garanti altına alır.
+
+#### 🎯 Amaç
+
+- Referans kodu **tek doğru kaynak (source of truth)** kabul etmek
+- Dosya yapısı ve içerikte **byte-for-byte** eşleşme sağlamak
+- Fark varsa **minimal patch** ile düzeltmek
+
+---
+
+## ⚙️ Kullanım
+
+İstediğin skill dosyasını Antigravity projenin ilgili klasörüne kopyalaman yeterlidir:
+
+    /skills
+
+Antigravity, skill’i dosyanın başındaki **YAML front matter** üzerinden tanır.
+
+---
+
+## 📜 Lisans
+
+Bu repo **MIT Lisansı** ile paylaşılmaktadır.
+
+---
+
+## 🧭 Son Not
+
+Bu skills’ler:
+
+- daha iyi prompt yazmak için değil
+- **daha doğru davranan sistemler** kurmak için vardır.
+
+Antigravity büyüdükçe bu repo da büyüyecektir.👥 Reviewer Seviyeleri
 	•	Junior Reviewer → Okunabilirlik ve temel hatalar
 	•	Mid-Level Reviewer → Performans, SOLID, edge-case
 	•	Senior Reviewer (Antigravity Standard) → Mimari etki, teknik borç, yönlendirme
