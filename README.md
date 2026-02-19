@@ -14,6 +14,7 @@ Bu skills’lerin amacı; yapay zekâ destekli proje üretim ve inceleme süreç
     ├─ skills/
     │  ├─ code-review.md
     │  └─ project-parity-guard.md
+	│  └─ frontend-design.zip
     ├─ README.md
     └─ LICENSE
 
